@@ -1,0 +1,304 @@
+* {
+  /*-- Определяет как вычисляется ширина и высота элемента 
+  (учитывать любые границы и внутренние отступы в значениях, которые вы указываете в ширине и высоте элемента)--*/
+  box-sizing: border-box;
+}
+
+.container {
+  /*-- Ширина элемента--*/
+  width: 580px;
+  /*-- Внешние отступы в блоке--*/
+  margin: 0 auto;
+}
+
+.page {
+  /*--каждый блок занимает всю ширину строки.--*/
+  display: flex;
+  /*--Направление, в котором блоки будут располагаться вертикально.--*/
+  flex-direction: column;
+  /*--Минимальна ширина элемента.--*/
+  min-width: 640px;
+  /*--Минимальна высота элемента (в процентах от высоты области просмотра браузера).--*/
+  min-height: 100vh;
+  /*-- Внешние отступы в блоке--*/
+  margin: 0;
+  /*-- Шрифт от приоритетного к запасному--*/
+  font-family: 'Inter', sans-serif;
+  /*-- Размер шрифта--*/
+  font-size: 14px;
+  /*-- Высота строки или межстрочный интервал--*/
+  line-height: 18px;
+  /*-- Цвет шрифта--*/
+  color: white;
+  /*-- Цвет фона--*/
+  background-color: #6E5D4B;
+}
+
+.page-header {
+  /*-- Внешние отступы в блоке (снизу)--*/
+  margin-bottom: 20px;
+  /*-- Цвет шрифта--*/
+  color: white;
+  /*-- Цвет фона--*/
+  background: #6E5D4B no-repeat center url("img/head.jpg");
+  background-size: cover;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+.page-title {
+  /*-- Внешние отступы в блоке--*/
+  margin: 0 0 12px 0;
+  /*-- Внутренние отступы в блоке--*/
+  padding: 0;
+  /*-- Насыщенность или толщина шрифта--*/
+  font-weight: 700;
+  /*-- Размер шрифта--*/
+  font-size: 36px;
+  /*-- Высота строки или межстрочный интервал--*/
+  line-height: 100%;
+  /*-- Все заглавные--*/
+  text-transform: uppercase;
+  /*-- Цвет шрифта--*/
+  color: white;
+  /*-- Выравнивание по горизонтали--*/
+  text-align: center;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 0.05em;
+  }
+
+  .page-title2 {
+    /*-- Внешние отступы в блоке--*/
+    margin: 0 0 12px 0;
+    /*-- Внутренние отступы в блоке--*/
+    padding: 0;
+    /*-- Насыщенность или толщина шрифта--*/
+    font-weight: 700;
+    /*-- Размер шрифта--*/
+    font-size: 24px;
+    /*-- Высота строки или межстрочный интервал--*/
+    line-height: 100%;
+    /*-- Цвет шрифта--*/
+    color: rgb(0, 0, 0);
+    /*-- Выравнивание по горизонтали--*/
+    text-align: center;
+    }
+
+    .page-title3 {
+       /*-- Цвет шрифта--*/
+      color: rgb(0, 0, 0);
+          /*-- Размер шрифта--*/
+    font-size: 36px;
+      -webkit-text-stroke-color: rgb(255, 255, 255);
+      -webkit-text-stroke-width: 0.05em;
+            }
+
+.page-header-text {
+/*-- Управление переносами - сохранить в исходном формате--*/
+white-space: pre;
+  /*-- Внутренние отступы в блоке--*/
+  padding: 0px 24px 0px 0px;
+   /*-- Выравнивание по горизонтали--*/
+   text-align: right;
+  /*-- Размер шрифта--*/
+  font-size: 16px;
+
+}
+
+blockquote {
+  outline: rgb(0, 0, 0) solid 2px;
+  /*-- Внутренние отступы в блоке--*/
+  padding: 2px 120px 0px 0px;
+  /*-- Внешние отступы в блоке--*/
+  margin: 0px 0px 0px 0px;
+  /*-- Выравнивание по горизонтали--*/
+  text-align: right;
+  /*-- Размер шрифта--*/
+  font-size: 18px;
+    /*-- Ширина элемента--*/
+    width: 580px;
+  border-radius: 132px 0; 
+  font-style: italic;
+  color: black;
+ background-color: #ffffff;
+  }
+
+  .face {
+  outline: rgb(0, 0, 0) solid 2px;
+  border-radius: 0% 50% 50% 50%;
+/*-- Внешние отступы в блоке--*/
+margin: -58px 0px 0px 0px;
+background-color: #000000;
+}
+
+.linkmain {
+ /*-- Цвет шрифта--*/
+ color: rgb(0, 0, 0);
+}
+
+
+.section-title {
+    /*-- ширина элемента--*/
+  width: 100%;
+  /*-- Внешние отступы в блоке--*/
+  margin: 0;
+  /*-- Внешние отступы в блоке (снизу)--*/
+  margin-bottom: 20px;
+  /*-- Внутренние отступы в блоке--*/
+  padding: 0;
+  /*-- Насыщенность или толщина шрифта--*/
+  font-weight: bold;
+  /*-- Размер шрифта--*/
+  font-size: 18px;
+  /*-- Высота строки или межстрочный интервал--*/
+  line-height: 24px;
+}
+
+a {
+  color: #6653d9;
+}
+
+a:focus {
+  outline-color: #b6aaff;
+}
+
+
+
+.page-header .container {
+  /*-- Внутренние отступы в блоке (сверху)--*/
+  padding-top: 40px;
+  /*-- Внутренние отступы в блоке (снизу)--*/
+  padding-bottom: 20px;
+  /*-- Картинка на фоне--*/
+  /*-- background-image: url("img/raccoons.svg");--*/
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 290px 212px;
+}
+
+
+
+
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /*-- Внешние отступы в блоке (снизу)--*/
+  margin-bottom: 32px;
+ }
+
+.about-image {
+   width: 147px;
+   height: 147px;
+   border-radius: 50%;
+ }
+
+.about-content {
+   width: 410px;
+   /*-- Размер шрифта--*/
+   font-size: 14px;
+   /*-- Высота строки или межстрочный интервал--*/
+   line-height: 24px;
+ }
+
+.about-content p {
+   /*-- Внешние отступы в блоке--*/
+   margin: 0;
+   /*-- Внешние отступы в блоке (снизу)--*/
+   margin-bottom: 12px;
+   /*-- Внутренние отступы в блоке--*/
+   padding: 0;
+ }
+
+.status {
+  /*-- Внешние отступы в блоке (снизу)--*/
+  margin-bottom: 32px;
+}
+
+.status p {
+  /*-- Внешние отступы в блоке--*/
+  margin: 0;
+  /*-- Внутренние отступы в блоке (сверху)--*/
+  padding-top: 12px;
+  /*-- Внутренние отступы в блоке (справа)--*/
+  padding-right: 32px;
+  /*-- Внутренние отступы в блоке (снизу)--*/
+  padding-bottom: 16px;
+  /*-- Внутренние отступы в блоке (слева)--*/
+  padding-left: 32px;
+  border-radius: 32px 0;
+  /*-- Размер шрифта--*/
+  font-size: 16px;
+  /*-- Высота строки или межстрочный интервал--*/
+  line-height: 24px;
+  font-style: italic;
+  color: #333333;
+  background-color: #ffffff;
+}
+
+.contacts {
+  /*-- Внешние отступы в блоке (снизу)--*/
+  margin-bottom: 82px;
+}
+
+.contacts img {
+  width: 146px;
+  height: 146px;
+  /*-- Внешние отступы в блоке (справа)--*/
+  margin-right: 24px;
+}
+
+.contacts p {
+  /*-- Внешние отступы в блоке--*/
+  margin: 0;
+  /*-- Внешние отступы в блоке (снизу)--*/
+  margin-bottom: 12px;
+  /*-- Внутренние отступы в блоке--*/
+  padding: 0;
+  /*-- Размер шрифта--*/
+  font-size: 14px;
+  /*-- Высота строки или межстрочный интервал--*/
+  line-height: 24px;
+}
+
+p.contacts-name {
+  /*-- Внешние отступы в блоке (сверху)--*/
+  margin-top: 20px;
+  /*-- Внешние отступы в блоке (снизу)--*/
+  margin-bottom: 16px;
+  /*-- Насыщенность или толщина шрифта--*/
+  font-weight: bold;
+  /*-- Высота строки или межстрочный интервал--*/
+  line-height: 20px;
+}
+
+.contacts a {
+  /*-- Размер шрифта--*/
+  font-size: 16px;
+  /*-- Высота строки или межстрочный интервал--*/
+  line-height: 24px;
+}
+
+.page-footer {
+  /*-- Внешние отступы в блоке (сверху)--*/
+  margin-top: auto;
+  color: #ffffff;
+  background-color: #246492;
+}
+
+.page-footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /*-- Внутренние отступы в блоке (сверху)--*/
+  padding-top: 12px;
+  /*-- Внутренние отступы в блоке (снизу)--*/
+  padding-bottom: 14px;
+}
+
+.page-footer p {
+  /*-- Внешние отступы в блоке--*/
+  margin: 0;
+  /*-- Внутренние отступы в блоке--*/
+  padding: 0;
+ 
+}
