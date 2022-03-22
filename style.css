@@ -31,7 +31,7 @@
   /*-- Цвет шрифта--*/
   color: white;
   /*-- Цвет фона--*/
-  background-color: #6E5D4B;
+  background-color: #6e5d4b;
 }
 
 .page-header {
@@ -80,6 +80,8 @@
     color: rgb(0, 0, 0);
     /*-- Выравнивание по горизонтали--*/
     text-align: center;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+    -webkit-text-stroke-width: 0.03em;
     }
 
     .page-title3 {
@@ -95,7 +97,7 @@
 /*-- Управление переносами - сохранить в исходном формате--*/
 white-space: pre;
   /*-- Внутренние отступы в блоке--*/
-  padding: 0px 24px 0px 0px;
+  padding: 0px 28px 0px 0px;
    /*-- Выравнивание по горизонтали--*/
    text-align: right;
   /*-- Размер шрифта--*/
@@ -112,7 +114,7 @@ blockquote {
   /*-- Выравнивание по горизонтали--*/
   text-align: right;
   /*-- Размер шрифта--*/
-  font-size: 18px;
+  font-size: 16px;
     /*-- Ширина элемента--*/
     width: 580px;
   border-radius: 132px 0; 
@@ -129,12 +131,6 @@ margin: -58px 0px 0px 0px;
 background-color: #000000;
 }
 
-.linkmain {
- /*-- Цвет шрифта--*/
- color: rgb(0, 0, 0);
-}
-
-
 .section-title {
     /*-- ширина элемента--*/
   width: 100%;
@@ -144,16 +140,18 @@ background-color: #000000;
   margin-bottom: 20px;
   /*-- Внутренние отступы в блоке--*/
   padding: 0;
-  /*-- Насыщенность или толщина шрифта--*/
-  font-weight: bold;
+ /*-- Насыщенность или толщина шрифта--*/
+ font-weight: 400;
   /*-- Размер шрифта--*/
   font-size: 18px;
   /*-- Высота строки или межстрочный интервал--*/
-  line-height: 24px;
+  line-height: 18px;
+
 }
 
 a {
-  color: #6653d9;
+ /*-- Цвет шрифта--*/
+ color: rgb(0, 0, 0);
 }
 
 a:focus {
@@ -161,20 +159,27 @@ a:focus {
 }
 
 
+h2 {
+    /*-- Выравнивание по горизонтали--*/
+    text-align: center;
+    text-decoration: underline;
+  }
 
 .page-header .container {
   /*-- Внутренние отступы в блоке (сверху)--*/
   padding-top: 40px;
   /*-- Внутренние отступы в блоке (снизу)--*/
   padding-bottom: 20px;
-  /*-- Картинка на фоне--*/
-  /*-- background-image: url("img/raccoons.svg");--*/
+
   background-repeat: no-repeat;
   background-position: bottom left;
   background-size: 290px 212px;
 }
 
-
+.p1 {
+      /*-- Отсуп с красной строки--*/
+    text-indent: 30px; 
+  }
 
 
 
