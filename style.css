@@ -23,7 +23,7 @@
   /*-- Внешние отступы в блоке--*/
   margin: 0;
   /*-- Шрифт от приоритетного к запасному--*/
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', "Arial", sans-serif;
   /*-- Размер шрифта--*/
   font-size: 14px;
   /*-- Высота строки или межстрочный интервал--*/
@@ -32,6 +32,38 @@
   color: white;
   /*-- Цвет фона--*/
   background-color: #6e5d4b;
+  /*-- Фон - "гусинная лапка"--*/
+  position: relative;
+  z-index: 5;
+  min-height: 20px;
+    background-image:
+    linear-gradient(45deg, #746250 25%, transparent 25%),
+    linear-gradient(-45deg, #746250 25%, transparent 25%),
+    linear-gradient(135deg, #746250 25%, transparent 25%),
+    linear-gradient(-135deg, #746250 25%, transparent 25%);
+  background-position: 10px 0, 10px 0, 0 0, 0 0;
+  background-size: 20px 20px;
+}
+
+.navigation {
+  margin-bottom: 5px;
+  padding: 5px;
+  background-color: #9c9c9c;
+  /*-- Контур блока--*/
+  border: 2px solid #6e5d4b;
+  /*-- Цвет разделителей--*/
+  color: #6e5d4b;
+  /*-- Выравнивание по горизонтали--*/
+  text-align: center;
+}
+
+.navigation li{
+  /*-- Исключить нумерацию списка--*/
+  list-style: none;
+  /*-- Расположить по горизонтали--*/
+  display: inline-block;
+  /*-- Внешние отступы в блоке--*/
+  margin: 0 1em 0 1em;
 }
 
 .page-header {
@@ -42,8 +74,10 @@
   /*-- Цвет фона--*/
   background: #6E5D4B no-repeat center url("img/head.jpg");
   background-size: cover;
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  /*-- Тень--*/
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
 }
+
 .page-title {
   /*-- Внешние отступы в блоке--*/
   margin: 0 0 12px 0;
@@ -61,48 +95,52 @@
   color: white;
   /*-- Выравнивание по горизонтали--*/
   text-align: center;
+  /*-- Контур текста--*/
   -webkit-text-stroke-color: black;
   -webkit-text-stroke-width: 0.05em;
   }
 
-  .page-title2 {
-    /*-- Внешние отступы в блоке--*/
-    margin: 0 0 12px 0;
-    /*-- Внутренние отступы в блоке--*/
-    padding: 0;
-    /*-- Насыщенность или толщина шрифта--*/
-    font-weight: 700;
-    /*-- Размер шрифта--*/
-    font-size: 24px;
-    /*-- Высота строки или межстрочный интервал--*/
-    line-height: 100%;
-    /*-- Цвет шрифта--*/
-    color: rgb(0, 0, 0);
-    /*-- Выравнивание по горизонтали--*/
-    text-align: center;
-    -webkit-text-stroke-color: rgb(255, 255, 255);
-    -webkit-text-stroke-width: 0.03em;
-    }
+.page-title2 {
+  /*-- Внешние отступы в блоке--*/
+  margin: 0 0 12px 0;
+  /*-- Внутренние отступы в блоке--*/
+  padding: 0;
+  /*-- Насыщенность или толщина шрифта--*/
+  font-weight: 700;
+  /*-- Размер шрифта--*/
+  font-size: 24px;
+  /*-- Высота строки или межстрочный интервал--*/
+  line-height: 100%;
+  /*-- Цвет шрифта--*/
+  color: rgb(0, 0, 0);
+  /*-- Выравнивание по горизонтали--*/
+  text-align: center;
+  /*-- Контур текста--*/
+  -webkit-text-stroke-color: rgb(255, 255, 255);
+  -webkit-text-stroke-width: 0.03em;
 
-    .page-title3 {
-       /*-- Цвет шрифта--*/
-      color: rgb(0, 0, 0);
-          /*-- Размер шрифта--*/
-    font-size: 36px;
-      -webkit-text-stroke-color: rgb(255, 255, 255);
-      -webkit-text-stroke-width: 0.05em;
-            }
+  text-decoration: none;
+  }
+
+.page-title3 {
+  /*-- Цвет шрифта--*/
+  color: rgb(0, 0, 0);
+  /*-- Размер шрифта--*/
+  font-size: 36px;
+  /*-- Контур текста--*/
+  -webkit-text-stroke-color: rgb(255, 255, 255);
+  -webkit-text-stroke-width: 0.05em;
+  }
 
 .page-header-text {
-/*-- Управление переносами - сохранить в исходном формате--*/
-white-space: pre;
+  /*-- Управление переносами - сохранить в исходном формате--*/
+  white-space: pre;
   /*-- Внутренние отступы в блоке--*/
   padding: 0px 28px 0px 0px;
-   /*-- Выравнивание по горизонтали--*/
-   text-align: right;
+  /*-- Выравнивание по горизонтали--*/
+  text-align: right;
   /*-- Размер шрифта--*/
   font-size: 16px;
-
 }
 
 blockquote {
@@ -123,21 +161,21 @@ blockquote {
  background-color: #ffffff;
   }
 
-  .face {
+.face {
   outline: rgb(0, 0, 0) solid 2px;
   border-radius: 0% 50% 50% 50%;
-/*-- Внешние отступы в блоке--*/
-margin: -58px 0px 0px 0px;
-background-color: #000000;
-}
+  /*-- Внешние отступы в блоке--*/
+  margin: -58px 0px 0px 0px;
+  background-color: #000000;
+  }
 
 .section-title {
-    /*-- ширина элемента--*/
+  /*-- ширина элемента--*/
   width: 100%;
   /*-- Внешние отступы в блоке--*/
   margin: 0;
   /*-- Внешние отступы в блоке (снизу)--*/
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   /*-- Внутренние отступы в блоке--*/
   padding: 0;
  /*-- Насыщенность или толщина шрифта--*/
@@ -146,23 +184,22 @@ background-color: #000000;
   font-size: 18px;
   /*-- Высота строки или межстрочный интервал--*/
   line-height: 18px;
-
-}
+  }
 
 a {
  /*-- Цвет шрифта--*/
- color: rgb(0, 0, 0);
-}
+ color: rgb(0, 0, 0); 
+ }
 
 a:focus {
-  outline-color: #b6aaff;
+  outline-color: #007434;
 }
 
 
 h2 {
-    /*-- Выравнивание по горизонтали--*/
-    text-align: center;
-    text-decoration: underline;
+  /*-- Выравнивание по горизонтали--*/
+  text-align: center;
+  text-decoration: underline;
   }
 
 .page-header .container {
@@ -177,41 +214,46 @@ h2 {
 }
 
 .p1 {
-      /*-- Отсуп с красной строки--*/
-    text-indent: 30px; 
+  /*-- Отсуп с красной строки--*/
+  text-indent: 30px; 
   }
 
 
 
 .about {
+  /*-- Внутренние отступы в блоке--*/
+  padding: 10px 10px 10px 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   /*-- Внешние отступы в блоке (снизу)--*/
   margin-bottom: 32px;
+  background-color: rgba(241, 196, 15, 0.1);
+  border-radius: 5px;
+  box-shadow: 0 0 3px #cccccc;
  }
 
 .about-image {
-   width: 147px;
-   height: 147px;
-   border-radius: 50%;
+  width: 147px;
+  height: 147px;
+  border-radius: 50%;
  }
 
 .about-content {
-   width: 410px;
-   /*-- Размер шрифта--*/
-   font-size: 14px;
-   /*-- Высота строки или межстрочный интервал--*/
-   line-height: 24px;
+  width: 410px;
+  /*-- Размер шрифта--*/
+  font-size: 14px;
+  /*-- Высота строки или межстрочный интервал--*/
+  line-height: 24px;
  }
 
 .about-content p {
-   /*-- Внешние отступы в блоке--*/
-   margin: 0;
-   /*-- Внешние отступы в блоке (снизу)--*/
-   margin-bottom: 12px;
-   /*-- Внутренние отступы в блоке--*/
-   padding: 0;
+  /*-- Внешние отступы в блоке--*/
+  margin: 0;
+  /*-- Внешние отступы в блоке (снизу)--*/
+  margin-bottom: 12px;
+  /*-- Внутренние отступы в блоке--*/
+  padding: 0;
  }
 
 .status {
@@ -287,7 +329,10 @@ p.contacts-name {
   /*-- Внешние отступы в блоке (сверху)--*/
   margin-top: auto;
   color: #ffffff;
-  background-color: #246492;
+  /*-- Цвет фона--*/
+  background-color: #6e5d4b;
+    /*-- Выравнивание по горизонтали--*/
+    text-align: center;
 }
 
 .page-footer .container {
@@ -303,7 +348,19 @@ p.contacts-name {
 .page-footer p {
   /*-- Внешние отступы в блоке--*/
   margin: 0;
-  /*-- Внутренние отступы в блоке--*/
-  padding: 0;
- 
+ }
+
+
+
+ .skills dd {
+  margin: 0;
+  margin-bottom: 10px;
+  background-color: #7a7a7a;
 }
+
+.skills-level {
+  font-size: 12px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #47bb52;
+  }
