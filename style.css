@@ -136,7 +136,7 @@
   /*-- Управление переносами - сохранить в исходном формате--*/
   white-space: pre;
   /*-- Внутренние отступы в блоке--*/
-  padding: 0px 28px 0px 0px;
+  padding: 0px 32px 0px 0px;
   /*-- Выравнивание по горизонтали--*/
   text-align: right;
   /*-- Размер шрифта--*/
@@ -354,8 +354,10 @@ p.contacts-name {
 
  .skills dd {
   margin: 0;
-  margin-bottom: 10px;
   background-color: #7a7a7a;
+  margin-left: 270px; /* Отступ слева */
+  width: 270px; /* Ширина для текста */
+  margin-bottom: 5px; /* Расстояние между терминами */
 }
 
 .skills-level {
@@ -363,4 +365,12 @@ p.contacts-name {
   text-align: center;
   color: #ffffff;
   background-color: #47bb52;
-  }
+ }
+
+  dt {
+    float: left; /* Для размещения на одной строке */
+    width: 270px; /* Ширина для текста */
+    text-align: right; /* Выравнивание по правому краю */
+    padding-right: 5px; /* Отступ справа */
+    min-height: 1px; /* Минимальная высота */
+   }
